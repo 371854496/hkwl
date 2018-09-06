@@ -1,0 +1,106 @@
+<!--pages/member/index.wxml-->
+<view class="page">
+  <view class="page__bd">
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access" bindtap="bindOrderTap">
+        <view class="weui-cell__bd" style="font-size: 16px;">头像</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+          <view style="display: inline-block;vertical-align:middle; font-size: 16px;">
+          
+             <view class='commentavatar'>
+          <image class='commentavatarimage' src='{{userinfo.avatarurl}}'></image>
+          </view>
+
+          </view>
+
+        </view>
+      </view>
+
+    </view>
+
+    <view style='font-size:12px;color:#ccc;height:30px;line-height:30px;padding-left:15px;'>基础资料（只能修改一次）</view>
+
+    <!--my order start-->
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access" bindtap="bindOrderTap">
+        <view class="weui-cell__bd" style="font-size: 16px;">名字</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+          <view style="display: inline-block;vertical-align:middle; font-size: 16px;">
+          {{userinfo.nickname}}
+          
+          </view>
+
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_access" bindtap="bindOrderTap">
+        <view class="weui-cell__bd" style="font-size: 16px;">性别</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+          <view style="display: inline-block;vertical-align:middle; font-size: 16px;">{{userinfo.gender==1?"男":"女"}}</view>
+
+        </view>
+      </view>
+
+             <view class="weui-cell weui-cell_access" bindtap="bindOrderTap">
+        <view class="weui-cell__bd" style="font-size: 16px;">生日</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+          <view style="display: inline-block;vertical-align:middle; font-size: 16px;">{{userinfo.birthday}}</view>
+
+        </view>
+      </view>
+
+    </view>
+
+    <view style='font-size:12px;color:#ccc;height:30px;line-height:30px;padding-left:15px;'>其他资料</view>
+
+    <view class="weui-cells weui-cells_after-title" style="font-size: 16px;">
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <navigator url='../address/list/index'>
+            <view style="display: inline-block; vertical-align: middle">手机号码</view>
+          </navigator>
+
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">
+                  <view style="display: inline-block;vertical-align:middle; font-size: 16px;">{{userinfo.telnumber}}</view>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_access"  bindtap='bindToAddressListTab' style='height:50rpx;'>
+        <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">我的地址</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+
+      <view class="weui-cell weui-cell_access">
+  
+        <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">所在城市</view>
+
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">
+          <view style="display: inline-block;vertical-align:middle; font-size: 16px;">{{hostregion}}</view>
+        </view>
+
+      </view>
+     
+    </view>
+ 
+
+<view style='height:30px;'></view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access" bindtap="bindOrderTap">
+        <view class="weui-cell__bd" style="font-size: 16px;">注册时间</view>
+        <view class="weui-cell__ft " style="font-size: 0">
+          <view style="display: inline-block;vertical-align:middle; font-size: 16px;">{{userinfo.createtime}}</view>
+
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+</view>

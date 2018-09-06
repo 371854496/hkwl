@@ -1,0 +1,36 @@
+@import '../common/lib/weui.wxss';
+.tui-number-group{
+ display: table;
+ table-layout: fixed;
+ width: 300rpx;
+ text-align: center;
+ border-radius: 6px;
+ border: 1px solid #bbb;
+ overflow: hidden;
+}
+.tui-number-cell{
+ display: table-cell;
+ line-height: 1.7;
+ border-radius: 0;
+}
+button::after{
+ border-bottom: none;
+ border-top: none;
+ border-radius: 0;position: absolute
+}
+.kf_button{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  height: 220rpx;
+  left: 0;
+  bottom: 20rpx;
+  position: fixed;
+}
+.kf_button::after{
+  border: 0px;
+}
+.kf_image{
+  z-index: 9999;
+  width: 150rpx;
+  height: 150rpx;
+}

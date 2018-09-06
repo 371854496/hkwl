@@ -1,0 +1,18 @@
+<!--components/itemNav/component.wxml-->
+<scroll-view scroll-x class='nav'>
+    <block wx:for="{{navArr}}" wx:key='index' wx:for-item='navOjb'>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <view class="nav-title {{activeNav==navOjb.id?'active-nav-font':''}}" catchtap='navBtn' data-id='{{navOjb.id}}'>
+           
+=======
+        <view class="nav-title {{activeNav==navOjb.id?'active-nav-font':''}}" catchtap='navBtn' data-id='{{navOjb.id}}'>
+>>>>>>> 60dd8234ae1544672ad3633bcae69e0d56e98b2f
+=======
+        <view class="nav-title {{activeNav==index?'active-nav-font':''}}" catchtap='navBtn' data-index='{{index}}' data-id='{{navOjb.id}}'>
+>>>>>>> parent of d5405ec... jy
+            <text>{{navOjb.catename}}</text>
+            <view wx:if='{{activeNav==index}}' class='active-nav-border'></view>
+        </view>
+    </block>
+</scroll-view>

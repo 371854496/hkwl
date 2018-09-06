@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "我的预约",
+"enablePullDownRefresh": true,
+    "onReachBottomDistance": "50",
+    "usingComponents": {
+      "shoplist": "/components/shopList/component",
+      "itemnav": "/components/itemNav/component",
+      "emty": "/components/emty/component"
+    
+  }
+}

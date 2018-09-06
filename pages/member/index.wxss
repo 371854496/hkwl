@@ -1,0 +1,145 @@
+/* pages/member/index.wxss */
+@import '../common/lib/weui.wxss';
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+
+.placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #a26527;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #cfcfcf;
+}
+.userinfo-placeholder
+{
+
+    text-align: center;
+    background-color: #F6DCE5;
+    height: 10em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.order-procedure
+{
+  border:0px;
+   background-color: #ffffff;
+}
+
+
+page {
+  background-color: white;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+<<<<<<< HEAD
+}
+<<<<<<< HEAD
+.weui-flex{
+  height:200rpx;
+  margin-top: -10rpx;
+  background-color: white;
+  margin-bottom: 20rpx;
+}
+.vip-pic{
+ width:60rpx;
+ height:28rpx;
+ margin-left:26rpx;
+ margin-top:46rpx;
+ position: relative;
+}
+.v-font{
+  position: absolute;
+  left:12rpx;
+  font-family: TrebuchetMS;
+font-size: 12px;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 12px;
+}
+.wd-pic{
+  width:40rpx;
+  height:40rpx;
+  margin-left: 4rpx;
+  padding-top: 20rpx;
+}
+.wd-font{
+  width:150rpx;
+  position: absolute;
+  left:32px;
+  top:14rpx;
+}
+.page-version{
+  margin-top:20rpx;
+  padding: 30rpx 50rpx 30rpx;
+  text-align: center;
+  color:#ccc;
+   background-color:#F7F7F7;
+  font-size:12px;
+}
+.sp{
+  width: 300rpx;
+  height: 68rpx;
+  font-size: 34px;
+  color: #303030;
+  letter-spacing: 0;
+  line-height: 68rpx;
+  margin-bottom: 32rpx;
+  margin-left:32rpx;
+   padding-bottom: 30rpx;
+  z-index:24; 
+  position: relative;
+   font-family: PingFangSC-Semibold;
+}
+.frist-zt{
+  width: 100%;
+  background-color: white;
+  padding-top: 10rpx;
+}
+.xk{
+  width: 36rpx;
+  height: 36rpx;
+  background: #FAD94B;
+  opacity: 0.8  ;
+  border-radius: 50%; 
+  position: absolute;
+  left:22rpx;
+  z-index: 22;
+  top:6rpx;
+
+=======
+.kf_button{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  height: 142rpx;
+  right: 0;
+  bottom: 20rpx;
+  position: fixed;
+}
+.kf_button::after{
+  border: 0px;
+}
+.kf_image{
+  z-index: 9999;
+  width: 150rpx;
+  height: 150rpx;
+>>>>>>> 60dd8234ae1544672ad3633bcae69e0d56e98b2f
+=======
+>>>>>>> parent of d5405ec... jy
+}

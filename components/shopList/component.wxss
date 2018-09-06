@@ -1,0 +1,52 @@
+/* components/shopList/shopList.wxss */
+.shop-titleimg{
+    height: 320rpx;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.shoplist{
+  padding: 0 24rpx;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  margin-top: 168rpx;
+  background-color: white;
+}
+.shoplist>view{
+  height: 384rpx;
+  width: 340rpx;
+  position: relative;
+  border-radius:8rpx;
+  box-shadow: 0 4rpx 8rpx rgba(0,0,0,0.04); 
+  margin-bottom: 40rpx; 
+}
+.shoplist>view>.shop-img{
+    height: 254rpx;
+    width: 100%;
+    background-size: cover;
+    border-top-left-radius:8rpx; 
+    border-top-right-radius:8rpx;
+}
+.shoplist>view>.shop-content{
+    position: absolute;
+    width: 320rpx;
+    bottom: 30rpx;
+    left: 20rpx;
+    
+}
+.shoplist>view>view>.shop-title{
+    font-size: 28rpx;
+    line-height: 28rpx;
+    height: 58rpx;
+    color: #333;
+    text-overflow:ellipsis; 
+    white-space:nowrap; 
+    overflow:hidden;
+}
+.shoplist>view>view>.shop-price{
+    font-size: 32rpx;
+    line-height: 32rpx;
+    height: 32rpx;
+    color: #996B7A;
+}

@@ -1,0 +1,19 @@
+/* pages/order/index.wxss */
+@import '../common/lib/weui.wxss';
+
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+
+.on{ color: black;  
+    border-bottom: 5rpx solid black;} 
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; } 

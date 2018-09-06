@@ -1,0 +1,150 @@
+<!--pages/index/index.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-ad">
+      <block wx:for="{{banners}}" wx:key="id">
+           <!-- <navigator url="../detail/details?itemid={{item.id}}"> -->
+        <swiper-item >
+          <image src="{{item.picurl}}" class="swiper-image" bindtap='banTap'data-id="{{item}}"/>
+        </swiper-item>
+         <!-- </navigator> -->
+      </block>
+    </swiper>
+  </view>
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <view class='info-top' >
+        <view class='info-vip'  bindtap='signTab'>
+            <view>
+              <image src='../../image/sy_icon_default_02@2x.png' class='info-img'></image>
+            </view>
+            <view class='info-font'>报名</view>
+        </view>
+        <view class='info-bm'bindtap='spTab'>
+            <view>
+              <image src='../../image/sy_icon_default_13@2x.png' class='info-img'></image>
+            </view>
+            <view class='info-font'>视频</view>
+        </view>
+        <view class='info-sc'bindtap='materialTab'>
+            <view>
+              <image src='../../image/sy_icon_default_03@2x.png' class='info-img'></image>
+            </view>
+            <view class='info-font'>素材</view>
+        </view>
+        <view class='info-zb' bindtap='webTab'>
+            <view>
+              <image src='../../image/sy_icon_default_04@2x.png' class='info-img'></image>
+              <!-- <web-view src="http://shangzhibo.tv/aggregation/6799895"></web-view> -->
+            </view>
+            <view class='info-font'>直播</view>
+        </view>
+  </view>
+ <view style="border:0.5px solid #F0F0F0;margin-top:32rpx;width:686rpx;margin-left:30rpx;"></view>
+    <view class="title-hd">
+      活动资讯
+  </view>
+ 
+
+    <view style="margin-left:36rpx;">
+      <block wx:for="{{articles}}" wx:key="id">
+       <navigator url="../detail/details?itemid={{item.id}}" class="hd-nav">
+     <view class="hd-zt">
+        <view>
+            <image class="hd-pic" src="{{item.picture}}" />
+        </view>
+        <view>
+            <view class="hd-title" >{{item.title}}</view>
+            <view class="hd-price">{{item.remark}}</view>
+        </view>
+      </view>
+         </navigator>
+       </block>
+      </view> 
+       <view class="title-ss">
+              赛事视频
+      </view>
+  <view style="margin-left:32rpx;">
+  <scroll-view class="scroll-view_H" scroll-x="true" style="white-space: nowrap;display:flex;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll"  scroll-left="{{scrollLeft}}">
+     <block wx:for="{{categoryRecommends}}" wx:key="id">
+    <view   class="scroll-view-item_H bc_green" data-id="{{item.id}}" style="background-image:url('{{item.catepic}}');background-size:cover;display:inline-block;" bindtap='clickTap'>
+     
+     <view  class="ss-font">{{item.catename}}</view>
+=======
+
+ 
+    <view class="weui-grids" style="border:0px;">
+        <block wx:for="{{categoryRecommends}}" wx:key="id">
+        <view class="weui-grid category-item" data-id="{{item.id}}" bindtap='clickTap'>
+          <image class="category-pic" src="{{item.catepic}}" />
+          <view class="category-name"style="color:black;">{{item.catename}}</view>
+        </view>
+   </block>
+    </view>
+      
+  <view class='info-top'>
+        <image src='../../image/tuijian@3x.png' class='info-img'></image>
+    </view>
+  <view class="page__bd">
+
+    <view>
+    </view>
+
+ 
+
+=======
+  <view class='info-top'>
+        <image src='../../image/tuijian@3x.png' class='info-img'></image>
+    </view>
+  <view class="page__bd">
+
+    <view>
+    </view>
+
+ 
+
+>>>>>>> parent of d5405ec... jy
+    <view class="weui-grids" style="border:0px;">
+      <block wx:for="{{itemRecommends}}" wx:key="id">
+        <navigator url="../detail/details?itemid={{item.id}}" class="weui-grid" style='width:100%;border:0px;background-color:white;padding:16px'>
+          <view class="weui-grid_border">
+<<<<<<< HEAD
+          <image class="weui-grid__product" src="{{item.picture}}"/>
+=======
+          <image class="weui-grid__product" src="{{item.picture}}" />
+>>>>>>> parent of d5405ec... jy
+             <view class="weui-grid_font">
+                  <view class="weui-grid__label" style='font-size:16px;color:black;'>{{item.title}}
+                  </view>
+                  <view class="product-price">RMB:{{item.price}}元</view>
+                   <view class="active-nav-border"></view>
+          </view>
+          </view>
+<<<<<<< HEAD
+         </navigator>
+      </block>
+>>>>>>> 60dd8234ae1544672ad3633bcae69e0d56e98b2f
+=======
+         
+        </navigator>
+      </block>
+>>>>>>> parent of d5405ec... jy
+    </view>
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+</scroll-view>
+=======
+  </view>
+   <button class="kf_button" open-type="contact" session-from="weapp">
+    <image class="kf_image" src="../../image/kf_icon_default_01@2x.png"></image>
+</button>
+<view class='page-version'>蓝米美业小程序提供技术支持</view>
+>>>>>>> 60dd8234ae1544672ad3633bcae69e0d56e98b2f
+=======
+  </view>
+<view class='page-version'>蓝米美业小程序提供技术支持</view>
+>>>>>>> parent of d5405ec... jy
+</view>
+

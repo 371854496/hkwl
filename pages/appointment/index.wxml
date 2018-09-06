@@ -1,0 +1,108 @@
+
+<view class="weui-cells weui-cells_after-title"style="border-top:1px solid white;">
+            <view class="weui-cell weui-cell_input"style="border-top:0px;">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">姓名</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value="{{realname}}" placeholder="您的姓名" name="name" bindblur="bindNameChange" auto-focus/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">手机号码</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <input class="weui-input"  type="number" maxlength="11" placeholder="请输入手机号" value="{{mobile}}"
+                   name="mobile" bindblur="bindPhoneChange" />
+                </view>
+            </view>
+           
+         <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">预约日期</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker mode="date" value="{{date}}" start="" end="" bindchange="bindDateChange">
+                        <view class="weui-input">{{date}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">预约时间</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker mode="time" value="{{time}}" start="" end="" bindchange="bindTimeChange">
+                        <view class="weui-input">{{time}}</view>
+                    </picker>
+                </view>
+            </view>
+            
+            <!-- <view class="weui-cell weui-cell_select"style="border-bottom:0px;">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">技师</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
+                        <view class="weui-select weui-select_in-select-after">{{countries[countryIndex]}}</view>
+                    </picker>
+                </view>
+            </view> -->
+         <view class="weui-cell weui-cell_input weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">买家留言</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value="{{remarkremark}}" placeholder="可填写偏好或要求"  bindblur="bindremarkChange" />
+                </view>
+              
+            </view>
+
+          </view>
+      
+   
+            <view>
+        
+            <view style='width:90%;margin-left:5%;margin-top:40rpx;position:relative;box-shadow: 0 0.2rem 0.24rem 0.2rem rgba(82,94,102,.15);'>
+              <view style="position:absolute;top:136rpx;right:336rpx;">价格</view>
+              <view style="position:absolute;top:136rpx;right:104rpx;">¥{{item.price}}</view>
+              <view style="position:absolute;top:28rpx;right:84rpx;width:316rpx;">{{item.title}}</view>
+              
+              <view class="tui-content"style="height:300rpx;margin-top:100rpx;">
+         
+            <view class="tui-gallery-list"style="position:relative">
+                <view class="tui-number-group" style="position:absolute;top:200rpx;right:36rpx;width:200rpx;">
+                  <button class="tui-number-cell" bindtap="nextNum1" disabled='{{disabled1}}'>-</button>
+                    <input class="tui-number-cell" bindblur='bindBuyNumInput' name="number" type="number" value='{{num}}'></input>
+                      <button class="tui-number-cell" bindtap="prevNum1" disabled='{{disabled2}}'>+</button>
+                </view>
+                 <view class="tui-gallery-list" style="position:absolute;top:200rpx;left:280rpx">数量</view>
+          </view>
+<<<<<<< HEAD
+             <view  style="padding-top:20rpx;padding-left:20rpx;">
+<<<<<<< HEAD
+             <image style="width:240rpx;height:240rpx;"  src="{{item.picurl}}"/></view>
+=======
+             <image  bindtap="banBtn"style="width:240rpx;height:240rpx;" 
+             src="{{item.picurl}}"/></view>
+>>>>>>> 60dd8234ae1544672ad3633bcae69e0d56e98b2f
+=======
+             <view  style="padding-top:20rpx;padding-left:20rpx;"><image style="width:240rpx;height:240rpx;" 
+             src="{{item.picurl}}"/></view>
+>>>>>>> parent of d5405ec... jy
+                             
+            </view>
+
+<view style="float:right;margin-right:1%;margin-top:76rpx;">合计: <text style="color:red;">¥{{item.price*num}}</text></view>
+            </view>
+          <button class="kf_button" open-type="contact" session-from="weapp">
+    <image class="kf_image" src="../../image/kf_icon_default_01@2x.png"></image>
+</button>
+      </view>
+         <view>
+            <view style='margin-top:208rpx;'><button style='width:40%;float:right;margin-top:3rpx;margin-right:5%;background-color:#ECA6C7;color:white;' bindtap='bindPayNow'>立即支付</button>
+   </view>
+           <view style='margin-top:208rpx;'><button style='width:40%;margin-left:5%;background-color:#F6DCE5;color:#996B7A' bindtap='handleConfirm'>到店支付</button></view>
+        
+   </view>  

@@ -1,0 +1,27 @@
+/* components/itemNav/component.wxss */
+.nav{
+  white-space: nowrap;
+  color: #999; 
+  background: #fff;
+  width: 750rpx;
+}
+.nav-title{
+  display: inline-block; 
+  height: 99rpx;
+  padding: 20rpx 20rpx 0rpx 20rpx;
+  text-align: center;
+  vertical-align: top;
+  font-size: 28rpx;
+}
+.active-nav-font{
+  vertical-align: top;
+  line-height: 34rpx;
+  color: #333;
+  font-size: 40rpx;
+}
+.active-nav-border{
+  margin:20rpx auto 40rpx auto; 
+  width: 60rpx;
+  height: 4rpx;
+  background: rgb(240,196,211);
+}

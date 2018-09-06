@@ -1,0 +1,317 @@
+/* pages/detail/details.wxss */
+@import '../common/lib/weui.wxss';
+@import "/wxParse/wxParse.wxss";
+
+.swiper-ad {
+  height: 500rpx;
+  width: 100%;
+}
+
+.swiper-image {
+  height: 446rpx;
+  width: 750rpx;
+}
+
+.on {
+  color: black;
+  border-bottom: 3rpx solid rgb(240,196,211);
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.pro-detail-title {
+  background-color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.pro-detail-price {
+  background-color: white;
+  color: #996B7A;
+  margin-left: 16px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.pro-detail-foot {
+  border-top: 1px solid #eee;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  font-size: 14px;
+}
+
+.placeholder {
+  text-align: center;
+  height: 100%;
+  line-height: 50px;
+}
+
+.pro-buy {
+  background-color: rgb(240,196,211);
+  color: white;
+}
+
+.pro-addcart {
+  background-color: #eee;
+}
+
+/*使屏幕变暗  */
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+/*对话框 */
+
+.commodity_attr_box {
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+}
+
+.weui-panel {
+  background-color: #fff;
+  margin-top: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.weui-panel:first-child {
+  margin-top: 0;
+}
+
+.weui-panel:before {
+  top: 0;
+  border-top: 0rpx solid #e5e5e5;
+}
+
+.weui-panel:after, .weui-panel:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  color: #e5e5e5;
+}
+
+.weui-panel:after {
+  bottom: 0;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.item-attr-pictrue {
+  width: 80px;
+  height: 80px;
+  padding-right: 15px;
+}
+
+.item-attr-price {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  color: red;
+}
+.item-attr-grid
+{
+position:relative;float:left;padding:5px 5px;width:25%;box-sizing:border-box;
+}
+
+.item-attr-qty {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+.item-attr-name {
+  text-align: left;
+  padding-left: 15px;
+  height: 100%;
+  line-height: 40px;
+}
+
+.item-attr-scroll {
+  width: 100%;
+  height: 220px;
+}
+
+.item-attr-num-box {
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.item-attr-buy-text {
+  padding-left: 15px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.item-attr-button-box {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30rpx;
+}
+.item-attr-value-false
+{
+  border:1px solid #eee;border-radius: 15px;color:#999;font-size:14px;text-align:center;height:25px;line-height:25px
+}
+.item-attr-value-true
+{
+  background-color: red;
+    border:1px solid red;border-radius: 15px;color:#fff;font-size:14px;text-align:center;height:25px;line-height:25px
+}
+.page-version{
+  padding: 30rpx 50rpx 30rpx;
+  text-align: center;
+  color:#ccc;
+   background-color: #F8F8F8;
+  font-size:12px;
+  height:100%;
+<<<<<<< HEAD
+}
+<<<<<<< HEAD
+.hd-pic{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top:16rpx;
+  right:28rpx;
+}
+
+.fx{
+  position: absolute;
+  top:520rpx;
+  right:10rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999999;
+  line-height: 12px;
+  background-color:white;
+  border:0px;
+  height:20rxp; 
+}
+.fx-zt{
+width: 100rpx;
+height: 120rpx;
+position:absolute;
+top:486rpx;
+right:42rpx;
+}
+.se{
+  margin-left: 10rpx;
+}
+.hdjj{
+  font-family: PingFangSC-Medium;
+font-size: 16px;
+color: #333333;
+letter-spacing: 0;
+line-height: 16px;
+margin-top:32rpx;
+margin-left:32rpx; 
+}
+.hk{
+  background: #FAD94B;
+border-radius: 16px;
+width: 40rpx;
+height: 6rpx;
+margin-top:16rpx;
+margin-left:32rpx; 
+}
+.js-font{
+width: 704rpx;
+height: 160rpx;
+font-family: PingFangSC-Regular;
+font-size: 14px;
+color: #666666;
+letter-spacing: 0;
+line-height: 14px;
+margin-top:28rpx;
+margin-left:32rpx; 
+}
+button::after {
+    border-radius: 0;
+    border:0; 
+    }
+.fb{
+width:600rpx;
+font-family: PingFangSC-Regular;
+font-size: 14px;
+color: #999999;
+letter-spacing: 0;
+line-height: 22px;
+height:110rpx;
+margin-top:36rpx;
+
+}
+.goods-info-fx {
+position:absolute;
+width:50px;
+height:60px;
+right:0;
+top:0;
+}
+.goods-info-fx button {
+position:absolute;
+width:50px;
+height:60px;
+top:0;
+left:0;
+z-index:2;
+opacity:0;
+}
+.fx-font{
+font-family: PingFangSC-Regular;
+font-size: 12px;
+color: #999999;
+letter-spacing: 0;
+line-height: 12px;
+position: absolute;
+top:66rpx;
+right:28rpx;
+}
+=======
+.kf_button{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  height: 260rpx;
+  right: 0;
+  bottom: 20rpx;
+  position: fixed;
+}
+.kf_button::after{
+  border: 0px;
+}
+.kf_image{
+  z-index: 9999;
+  width: 150rpx;
+  height: 150rpx;
+}
+>>>>>>> 60dd8234ae1544672ad3633bcae69e0d56e98b2f
+=======
+}
+>>>>>>> parent of d5405ec... jy

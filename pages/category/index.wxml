@@ -1,0 +1,51 @@
+<!--pages/category/index.wxml-->
+<view class="product-sort">
+<<<<<<< HEAD
+  <itemnav navArr='{{categorys}}' bind:changeNav="navChange" curId='{{currCateId}}'></itemnav>
+<<<<<<< HEAD
+=======
+</view>
+<view style="height:420rpx;width:100%;margin-top:120rpx;" wx:if="{{gettopitem}}"  bindtap="banBtn">
+<view style='position:relative;'>
+    <view style="width:614rpx;height:264rpx;z-index:1;position:absolute;top:92rpx;left:68rpx;background-color:rgba(255,255,255,0.8)">
+    <view style="width:614rpx;height:264rpx;border:4rpx solid white;position:absolute;top:12rpx;left:-12rpx;"></view>
+   <view style="z-index:1;position:absolute;top:22px;left:112px;color:#666;">- 超值推荐 -</view>
+   <view style="z-index:1;width:100%;position:absolute;top:46px;font-size:21px;color:#22222;text-align:center;">{{gettopitem.title}}</view>
+    
+       <view style="z-index:1;width:100%;text-align:center;position:absolute;top:76px;font-size:21px;color:#22222;">￥{{gettopitem.price}}</view>
+   </view>
+<image style="width:100%;background-image:url('{{gettopitem.picurl}}');background-size: cover;"/>
+>>>>>>> 60dd8234ae1544672ad3633bcae69e0d56e98b2f
+=======
+  <itemnav navArr='{{categorys}}' bind:changeNav="navChange"></itemnav>
+>>>>>>> parent of d5405ec... jy
+</view>
+<view style="height:420rpx;width:100%;margin-top:120rpx;" wx:if="{{gettopitem}}"  bindtap="banBtn">
+<view style='position:relative;'>
+    <view style="width:614rpx;height:264rpx;z-index:1;position:absolute;top:92rpx;left:68rpx;background-color:rgba(255,255,255,0.8)">
+    <view style="width:614rpx;height:264rpx;border:4rpx solid white;position:absolute;top:12rpx;left:-12rpx;"></view>
+   <view style="z-index:1;position:absolute;top:22px;left:112px;color:#666;">- 超值推荐 -</view>
+   <view style="z-index:1;width:100%;position:absolute;top:46px;font-size:21px;color:#22222;text-align:center;">{{gettopitem.title}}</view>
+    
+       <view style="z-index:1;width:100%;text-align:center;position:absolute;top:76px;font-size:21px;color:#22222;">￥{{gettopitem.price}}</view>
+   </view>
+<image style="width:100%;background-image:url('{{gettopitem.picurl}}');background-size: cover;"/>
+</view>
+<<<<<<< HEAD
+
+</view>
+ <shoplist shopInfo="{{shopInfo}}" bindshopBtn="shopBtn"></shoplist> 
+<<<<<<< HEAD
+ 
+=======
+ <shoplist shopInfo="{{shopInfo}}" bindshopBtn="shopBtn"></shoplist> 
+   <button class="kf_button" open-type="contact" session-from="weapp">
+    <image class="kf_image" src="../../image/kf_icon_default_01@2x.png"></image>
+</button>
+>>>>>>> 60dd8234ae1544672ad3633bcae69e0d56e98b2f
+=======
+
+>>>>>>> parent of d5405ec... jy
+<view class='page-version'>蓝米美业小程序提供技术支持</view>
+
+

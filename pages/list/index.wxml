@@ -1,0 +1,58 @@
+<!--pages/index/index.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-search-bar" style="background-color:#F8F8F8;border:0px;height:50px">
+      <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+          <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+            <icon type="clear" size="14"></icon>
+          </view>
+        </view>
+        <label class="weui-search-bar__label" style="text-align:left;padding-left:8px" hidden="{{inputShowed}}" bindtap="showInput">
+          <icon class="weui-icon-search" type="search" size="14"></icon>
+          <view class="weui-search-bar__text">搜索商品：输入商品关键字</view>
+        </label>
+      </view>
+      <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+    </view>
+    <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+    </view>
+
+    <view>
+    </view>
+
+    <view class="weui-grids">
+      <block wx:for="{{items}}" wx:key="*this">
+        <navigator url="../detail/details?itemid={{item.id}}" class="weui-grid" hover-class="weui-grid_active" style='width:50%;border:0px;background-color:white;'>
+          <image class="weui-grid__product" src="{{item.picture}}" />
+          <view class="weui-grid__label">{{item.title}}</view>
+          <view class="product-price">{{item.price}}￥</view>
+        </navigator>
+      </block>
+    </view>
+
+
+  </view>
+</view>
